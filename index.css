@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blueviolet;
+    color: white;
+}
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1{
+    margin-top: 1em;
+}
+.SaibaMais {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.Sobre{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.Vitrine {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+}
+.desenv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    color: rgb(107, 107, 107);
+    width: 20em;
+    height: 15em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-image: initial;
+    padding: 10px;
+}
+
+
+.grow {
+    flex-grow: 1;
+}
+
+.proj1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(firstLanding.png);
+    background-size: cover;
+    color: rgb(236, 228, 235);
+    background-repeat: no-repeat;
+}
+
+.proj2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(logoGenerator.png);
+    background-size: cover;
+    color: rgb(236, 228, 235);
+    background-repeat: no-repeat;
+}
+
+.proj3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(notebooksPython.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.proj1 a, .proj2 a, .proj3 a{
+    color: white;
+}
+
+span, .Sobre a{
+    color:rgb(46, 35, 63);
+}
+
+@media screen and (max-width: 1021px){
+
+    .Vitrine {
+        display: flex;
+        flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.desenv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 75vw;
+    height: 15em;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+}
+
+}
