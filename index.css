@@ -5,8 +5,8 @@
     padding: 0px;
 }
 body{
-    background-color: blueviolet;
-    color: white;
+    background-color: rgb(2, 2, 2);
+    color:   white;
 }
 .Container {
     display: flex;
@@ -40,9 +40,7 @@ h1{
     flex-direction: row;
 }
 
-a{
-    text-decoration: none;
-}
+
 .desenv {
     display: flex;
     flex-direction: column;
@@ -50,13 +48,14 @@ a{
     
     justify-content: center;
     text-align: center;
-    background-color: rgb(221, 221, 221);
-    color: rgb(107, 107, 107);
+    background-color: rgba(103, 8, 141, 0.7);
+    color:   white;
     width: 20em;
     height: 15em;
     border-width: 2px;
     border-style: solid;
-    border-color: blueviolet;
+    border-color: rgb(2, 2, 2);
+    border-radius: 1px;
     border-image: initial;
     padding: 10px;
 }
@@ -67,31 +66,36 @@ a{
 }
 
 .proj1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(firstLanding.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(firstLanding.png);
     background-size: cover;
-    color: rgb(236, 228, 235);
+    color:   white;
     background-repeat: no-repeat;
 }
 
 .proj2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(logoGenerator.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(logoGenerator.png);
     background-size: cover;
-    color: rgb(236, 228, 235);
+    color:   white;
     background-repeat: no-repeat;
 }
 
 .proj3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(notebooksPython.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(notebooksPython.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.proj1 a, .proj2 a, .proj3 a{
-    color: white;
+.proj1 a, .proj2 a, .proj3 a, .proj4 a, .proj5 a{
+    color:   white;
+    text-decoration: none;
 }
 
-span, .Sobre a{
-    color:rgb(46, 35, 63);
+a{
+    color:   white;
+}
+
+span, .Sobre a, .SaibaMais a{
+    color:#6e44ff;
 }
 
 @media screen and (max-width: 1021px){
