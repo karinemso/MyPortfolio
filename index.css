@@ -33,8 +33,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5em;
 }
 
 .someContainer  {
@@ -59,7 +57,6 @@ body {
   display: flex;
   justify-content: center;
   width: 70%;
-  gap: 1rem;
   flex-direction: column;
 }
 
@@ -71,7 +68,7 @@ body {
   background: var(--primary-color);
   border-radius: 0.625em;
   font-size: 1em;
-  margin-bottom: 2em;
+
   
 }
 
@@ -178,6 +175,10 @@ body {
   color: white;
 }
 
+footer {
+  margin-bottom: 0;
+}
+
 .imgSobre{
   display: flex;
   width: 100%;
@@ -229,5 +230,18 @@ body {
     transform: scale(0.8);
     box-shadow: 0.5em 0.5em #BEFC00;
   
+  }
+  .someContainer  {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }  
+  .Container .contentContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
   }
 }
