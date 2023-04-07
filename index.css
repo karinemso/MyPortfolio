@@ -1,122 +1,190 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    background-color: rgb(2, 2, 2);
-    color:   white;
-}
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-h1{
-    margin-top: 1em;
-}
-.SaibaMais {
-    text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.Sobre{
-    text-align: center;
-    margin-bottom: 2em;
+:root {
+  --bg-color: black;
+  --primary-color: rgba(103, 8, 141, 0.7);
+}
+
+/* Utilities */
+.grow {
+  flex-grow: 1;
+}
+/* /////// */
+
+a {
+  color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Container .contentContainer {
+  min-width: 100vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+}
+
+.Container .contentContainer .text {
+  max-width: 80vw;
+  text-align: left;
+  margin: auto;
+}
+
+.Sobre {
+  text-align: center;
+
+  background: var(--primary-color);
+  border-radius: 0.625em;
+
+  min-width: 30vw;
+  min-height: 60vh;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 2em;
+}
+
+.sobre ul li {
+  padding-top: 20px;
+  color: white;
+  margin: 5%;
+  list-style: square;
 }
 .Vitrine {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
+.Vitrine .row {
+  display: flex;
+  flex-direction: row;
 }
 
+.Vitrine .row .desenv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  width: 20em;
+  height: 15em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(2, 2, 2);
+  border-radius: 1px;
+  border-image: initial;
+  padding: 10px;
+}
 
-.desenv {
+/* linear-gradient(rgba(0, 0, 0, 0.7),rgba(103, 8, 141, 0.7), */
+.Vitrine .row .proj1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/firstLanding.png);
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.Vitrine .row .proj2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/logoGenerator.png);
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.Vitrine .row .proj3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/notebooksPython.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Vitrine .row .proj2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/logoGenerator.png);
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.Vitrine .row .proj3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/notebooksPython.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Vitrine .row .proj4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(./assets/logoGenerator.png);
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.Vitrine .row .proj5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
+    url(notebooksPython.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.proj1 a,
+.proj2 a,
+.proj3 a,
+.proj4 a,
+.proj5 a {
+  color: white;
+}
+
+.imgSobre img {
+  box-shadow: 5px 10px black;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1021px) {
+  .Vitrine {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(103, 8, 141, 0.7);
-    color:   white;
-    width: 20em;
-    height: 15em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(2, 2, 2);
-    border-radius: 1px;
-    border-image: initial;
-    padding: 10px;
-}
-
-
-.grow {
-    flex-grow: 1;
-}
-
-.proj1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(firstLanding.png);
-    background-size: cover;
-    color:   white;
-    background-repeat: no-repeat;
-}
-
-.proj2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(logoGenerator.png);
-    background-size: cover;
-    color:   white;
-    background-repeat: no-repeat;
-}
-
-.proj3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)), url(notebooksPython.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.proj1 a, .proj2 a, .proj3 a, .proj4 a, .proj5 a{
-    color:   white;
-    text-decoration: none;
-}
-
-a{
-    color:   white;
-}
-
-span, .Sobre a, .SaibaMais a{
-    color:#6e44ff;
-}
-
-@media screen and (max-width: 1021px){
-
-    .Vitrine {
-        display: flex;
-        flex-direction: column;
-}
-.row {
+  }
+  .Vitrine .row {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-.desenv {
+  }
+  .Vitrine .row .desenv {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 75vw;
     height: 15em;
     margin-left: 0.625em;
     margin-right: 0.625em;
-}
-
+  }
 }
