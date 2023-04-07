@@ -4,11 +4,12 @@
   padding: 0px;
   text-decoration: none;
   list-style: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
   --bg-color: black;
-  --primary-color: rgba(103, 8, 141, 0.7);
+  --primary-color: #5D00BB;
 }
 
 /* Utilities */
@@ -28,60 +29,71 @@ body {
 
 .Container {
   display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.someContainer  {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.someContainer .text {
+  color: #BEFC00;
+
+}
+.someContainer h2 {
+  margin: 1em 0;
+  color: #BEFC00;
 }
 
 .Container .contentContainer {
-  min-width: 100vw;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
   display: flex;
-  gap: 3.5rem;
+  justify-content: center;
+  width: 70%;
+  gap: 1rem;
   flex-direction: column;
 }
 
-.Container .contentContainer .text {
-  max-width: 80vw;
-  text-align: left;
-  margin: auto;
-}
+
+
+
 
 .Sobre {
-  text-align: center;
-
   background: var(--primary-color);
   border-radius: 0.625em;
-
-  min-width: 30vw;
-  min-height: 60vh;
   font-size: 1em;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  gap: 2em;
+  margin-bottom: 2em;
+  
 }
 
+.sobre ul {
+  padding: 1em;
+}
 .sobre ul li {
-  padding-top: 20px;
+  margin-left: 2em;
+  margin-top: 1em;
   color: white;
-  margin: 5%;
   list-style: square;
 }
 .Vitrine {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+
 }
 
 .Vitrine .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .Vitrine .row .desenv {
@@ -92,16 +104,18 @@ body {
   text-align: center;
   background-color: var(--primary-color);
   color: white;
-  width: 20em;
-  height: 15em;
+  width: 100%;
+  height: 16em;
   border-width: 2px;
   border-style: solid;
   border-color: rgb(2, 2, 2);
   border-radius: 1px;
-  border-image: initial;
   padding: 10px;
 }
 
+.Vitrine .row .desenv a:hover {
+  transform: scale(1.1);
+}
 /* linear-gradient(rgba(0, 0, 0, 0.7),rgba(103, 8, 141, 0.7), */
 .Vitrine .row .proj1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(103, 8, 141, 0.7)),
@@ -164,9 +178,32 @@ body {
   color: white;
 }
 
+.imgSobre{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top:1em;
+}
 .imgSobre img {
-  box-shadow: 5px 10px black;
   border-radius: 50px;
+  width: 13.25rem;
+  height: 14.5rem;
+  box-shadow: 0.5em 0.5em #BEFC00;
+
+}
+
+.saibaMais {
+  padding: 2em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#nav {
+  color: white;
+}
+
+.saibaMais .text #github, strong{
+  color: #BEFC00;
 }
 
 @media screen and (max-width: 1021px) {
@@ -186,5 +223,11 @@ body {
     height: 15em;
     margin-left: 0.625em;
     margin-right: 0.625em;
+  }
+  .imgSobre img {
+    border-radius: 50px;
+    transform: scale(0.8);
+    box-shadow: 0.5em 0.5em #BEFC00;
+  
   }
 }
