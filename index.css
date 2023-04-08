@@ -217,6 +217,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.2em;
+  z-index: 1000;
   cursor: pointer;
 }
 .menuBurguerLinha {
@@ -231,13 +232,20 @@ footer {
   color: var(--text-color);
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
   flex-direction: column;
   gap: 2em;
   align-items: center;
   justify-content: center;
 
+}
+
+.flex {
+  display: flex;
 }
 @media screen and (max-width: 1021px) {
   .Vitrine {
@@ -267,7 +275,7 @@ footer {
     display: flex;
     margin-top: 1em;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
   }  
   .Container .contentContainer {
