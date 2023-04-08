@@ -228,7 +228,7 @@ footer {
 }
 
 .openedmenu{
-  background-color: var(--primary-color);
+  background-color: #5d00bb ;
   color: var(--text-color);
   width: 100vw;
   height: 100vh;
@@ -247,6 +247,27 @@ footer {
 .flex {
   display: flex;
 }
+
+
+.some{
+  display: none;
+}
+
+
+
+.menuBurguer.active #linha1 {
+  transform:  rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.menuBurguer.active #linha3 {
+  transform: translateY(-7px)rotate(-45deg);
+  transition: all .3s ease-in;
+}
+.menuBurguer.active #linha2 {
+  display: none;
+}
+
 @media screen and (max-width: 1021px) {
   .Vitrine {
     display: flex;
