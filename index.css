@@ -8,7 +8,7 @@
 }
 
 :root {
-  --bg-color: #000000;
+  --bg-color: #00000085;
   --primary-color: #5d00bbbb;
   --destaque:  #BEFC00;
   --text-color:white;
@@ -25,7 +25,11 @@ a {
 }
 
 body {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.582)),
+    url(./assets/backgroundimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text-color);
 }
 
@@ -221,6 +225,20 @@ footer {
   border-radius: 4em;
   background-color: var(--text-color);
 }
+
+.openedmenu{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+
+}
 @media screen and (max-width: 1021px) {
   .Vitrine {
     display: flex;
@@ -258,4 +276,5 @@ footer {
     width: 100%;
     flex-direction: column;
   }
+
 }
