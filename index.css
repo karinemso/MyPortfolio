@@ -288,8 +288,7 @@ footer {
 
 @media screen and (max-width: 1021px) {
   .Vitrine {
-    display: flex;
-    flex-direction: column;
+    gap: 0;
   }
   .Vitrine .row {
     display: flex;
