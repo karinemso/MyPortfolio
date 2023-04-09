@@ -246,22 +246,32 @@ footer {
 
 .flex {
   display: flex;
+  padding: 5em 0;
+  font-size: 2em;
 }
 
-
+.openedmenu.flex nav ul li {
+  margin-top: 0.8em;
+}
 .some{
   display: none;
 }
 
 
+.iconsContato{
+  transform: scale(0.8);
+}
 
+.iconsContato:hover{
+  transform: scale(1);
+}
 .menuBurguer.active #linha1 {
   transform:  rotate(45deg);
   transition: all .3s ease-in;
 }
 
 .menuBurguer.active #linha3 {
-  transform: translateY(-7px)rotate(-45deg);
+  transform: translateY(-6px)rotate(-45deg);
   transition: all .3s ease-in;
 }
 .menuBurguer.active #linha2 {
