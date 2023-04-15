@@ -168,7 +168,7 @@ body {
 }
 
 .Vitrine .row .proj4 {
-  background-image: linear-gradient(var(--primary-color), var(--destaque)),
+  background-image: linear-gradient(var(--primary-color), var(--bg-color)),
     url(./assets/bealty.jpeg);
   background-size: cover;
   color: var(--text-color);
